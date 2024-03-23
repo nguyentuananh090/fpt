@@ -450,7 +450,7 @@ label{
         width: 160px;
     }
 }
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 440px) {
     .main .main_3 .box .box_tt .anh {
         width: 100%;
     }
