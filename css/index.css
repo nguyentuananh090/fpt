@@ -103,7 +103,7 @@ span.icon_menu_mobile {
 
 .content_box .content1 span {
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 100;
 }
 
 .main .main_3 .box{
@@ -124,13 +124,21 @@ span.icon_menu_mobile {
     display: flex;
     padding: 10px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .main .main_3 .box .box_tt .anh{
-    width: 45%;
-    margin-right: 10px;
+    width: 49%;
+    
 }
 .main .main_3 .box .box_tt .content{
-    width: 45%;
+    width: 49%;
+    line-height: 1.8em;
+}
+.content_nd {
+    display: -webkit-box;
+    /* -webkit-line-clamp: 3; */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 img{
     width: 100%;
@@ -195,7 +203,7 @@ input[type="submit"] {
     background: transparent;
     border: 2px solid;
     color: #fff;
-    font-weight: 800;
+    font-weight: 600;
 }
 input[type="radio"] {
     width: 10%;
@@ -222,7 +230,7 @@ label{
     align-items: center;
     padding: 30px 60px;
     margin: 0 60px;
-
+    line-height: 1.5em;
 }
 .content_gv{
     width: 70%;
@@ -231,6 +239,9 @@ label{
     width: 30%;
     color: #f05123;
     text-align: center;
+    line-height: 1.7em;
+    font-size: 15px;
+
 }
 .main_5 .box_anh .anh {
     text-align: center;
@@ -271,15 +282,15 @@ label{
 .main_7 .box_main7{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .main_7 .box_main7 .box {
   
     width: 29%;
-    margin: 15px;
     background: #fff;
     position: relative;
-    line-height: 30px;
+    line-height: 1.8em;
+    margin-bottom: 35px;
   
 }
 
@@ -288,11 +299,12 @@ label{
     color: #fff;
     text-align: center;
    
-    padding: 20px 20px 80px 20px;
+    padding: 20px 20px 90px 20px;
 }
 .main_7 .box_main7 .box .box_tren .name {
     font-size:20px;
-    font-weight: 900;
+    font-weight: 600;
+    line-height: 2em;
 }
 .main_7 .box_main7 .box .box_tren .chucvu {
     font-size: 15px;
@@ -301,7 +313,8 @@ label{
 .main_7 .box_main7 .box .box_duoi{
      margin-top: 60px;
     text-align: center;
-    padding: 20px;
+    padding:50px 20px 20px 20px;
+    color: #000000a3;
 }
 .main_7 .box_main7 .box .box_anh img{
     width: 150px;
@@ -379,7 +392,8 @@ label{
     }
 
     .min_wrap {
-        width: calc(var(--full-wrap) - 28px)
+        width: calc(var(--full-wrap) - 48px);
+       
     }
     .main .main_2 .box {
         padding: 0;
@@ -432,25 +446,30 @@ label{
 
 @media only screen and (max-width: 740px) {
     .min_wrap {
-        width: calc(var(--full-wrap) - 10px);
+        width: calc(var(--full-wrap) - 30px);
         padding: 25px 0;
+    }
+    .dangky form {
+        padding: 10px;
     }
     .main .main_2 .box {
         padding: 0 ;
     }
     .main_3 .content_box {
        padding: 0;
-        width: 100%;
+        width: 50%;
     }
     .main .main_3 .box .box_tt{
         width: 100%;
     }
+   
     .main .main_3 .box .box_tt .anh {
-        width: 48%; 
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
     }
     .main .main_3 .box .box_tt .content {
-        width: 48%;
-        padding-top: 10px;
+        width: 100%;
     }
     .main_1 {
         
@@ -465,13 +484,14 @@ label{
      }
      .main_5 .box ,.main_6 .box{
     
-        padding: 30px 0px;
+        padding: 20px;
         margin: 10px;
         text-align: center;
+        
     }
     .main_2 .content_box {
         width: 50%;
-        padding: 0 10px;
+        padding: 10px;
         font-size: 10px;
     }
     .content_box .content1 span {
@@ -498,9 +518,11 @@ label{
     }
 }
 @media only screen and (max-width: 420px) {
-    .main .main_3 .box .box_tt .anh {
-        width: 100%;
+    .min_wrap {
+        width: calc(var(--full-wrap) - 15px);
+        padding: 25px 0;
     }
+   
     .main .main_3 .box .box_tt .content {
         width: 100%;
         padding-top: 10px;
@@ -519,6 +541,25 @@ label{
     }
     .footer_box .box {
         width: 99%;
+        padding-top: 20px;
+    }
+    .main_2 .content_box {
+        line-height: 1.5em;
+        padding: 5px;
+    }
+    .content_nd {
+        font-size: 15px;
+        -webkit-line-clamp: 3;
+     
+    }
+    .title {
+        font-size: 17px;
+    }
+    .content a {
+        font-size: 15px;
+    }
+    .video {
+        display: none;
     }
 }
 
